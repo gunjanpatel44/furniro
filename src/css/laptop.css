@@ -1,0 +1,18 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.g-m-left{
+  margin-left: 35px;
+}
+
+.g-m-right{
+  margin-right: 35px;
+}
+
+.hero-section{
+  width: 50%;
+}
+
+.our-products-grid{
+  --gridCol : 4;
+  --gridRow : 1;
+}
+}

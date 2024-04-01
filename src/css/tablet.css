@@ -1,0 +1,26 @@
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .g-m-left{
+    margin-left: 30px;
+  }
+
+  .g-m-right{
+    margin-right: 30px;
+  }
+
+  .our-products-grid {
+    --gridCol : 4;
+    --gridRow : 1;
+  }
+
+  .hero {
+    justify-content: center;
+  }
+
+  .footers-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .newsletter-form{
+    flex-direction: column;
+  }
+}

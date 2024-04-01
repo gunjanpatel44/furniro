@@ -1,0 +1,42 @@
+@media only screen and (max-width: 425px) {
+
+  .g-m-left {
+    margin-left: 20px;
+  }
+
+  .g-m-right {
+    margin-right: 20px;
+  }
+
+  .hero-section {
+    width: 90%;
+  }
+
+  .our-products-grid {
+    --gridCol : 3;
+    --gridRow : 1;
+  }
+
+  .footers-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .footer-links {
+    align-items: center;
+    text-align: center; 
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .explore {
+    padding: 20px;
+  }
+
+  .product-discount .product-price{
+    font-size: 14px;
+  }
+
+}
