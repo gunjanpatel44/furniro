@@ -13,8 +13,8 @@
   }
 
   .our-products-grid {
-    --gridCol : 3;
-    --gridRow : 1;
+    --gridCol: 3;
+    --gridRow: 1;
   }
 
   .footers-content {
@@ -24,7 +24,7 @@
 
   .footer-links {
     align-items: center;
-    text-align: center; 
+    text-align: center;
   }
 
   .newsletter-form {
@@ -35,8 +35,25 @@
     padding: 20px;
   }
 
-  .product-discount .product-price{
+  .product-discount .product-price {
     font-size: 14px;
   }
 
+  .footers-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .feature-banner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .feature-service {
+    justify-content: start;
+  }
 }

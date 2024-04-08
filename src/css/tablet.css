@@ -1,15 +1,15 @@
 @media only screen and (min-width: 425px) and (max-width: 768px) {
-  .g-m-left{
+  .g-m-left {
     margin-left: 30px;
   }
 
-  .g-m-right{
+  .g-m-right {
     margin-right: 30px;
   }
 
   .our-products-grid {
-    --gridCol : 4;
-    --gridRow : 1;
+    --gridCol: 4;
+    --gridRow: 1;
   }
 
   .hero {
@@ -20,7 +20,16 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  .newsletter-form{
+
+  .newsletter-form {
     flex-direction: column;
+  }
+
+  .feature-banner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .feature-service{
+    justify-content: start;
   }
 }
