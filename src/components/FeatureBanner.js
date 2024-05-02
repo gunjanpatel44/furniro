@@ -6,7 +6,7 @@ import Support from '../img/support.png';
 
 export default function FeaureBanner(){
   return(
-    <div className='feature-banner g-m-right g-m-left'>
+    <div className='feature-banner g-m-right g-m-left lg:grid-cols-2 md:grid-cols-3' >
       <div className='feature-service'>
         <img src={Quality} alt="High Quality" className='feature-banner-img'/>
         <div className='feature-content'>

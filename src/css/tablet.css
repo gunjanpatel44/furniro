@@ -1,4 +1,4 @@
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 630px) and (max-width: 768px) {
   .g-m-left {
     margin-left: 30px;
   }
@@ -31,5 +31,12 @@
   }
   .feature-service{
     justify-content: start;
+  }
+
+  .product-name{
+    font-size: 20px;
+  }
+  .product-price{
+    font-size: 15px;
   }
 }

@@ -1,17 +1,16 @@
-
 :root {
-  --fullDark: #B88E2F;
+  --fullDark: #b88e2f;
   --white: #ffffff;
-  --MedBrownish: #FFF3E3;
-  --lightGrey: #F4F5F7;
+  --MedBrownish: #fff3e3;
+  --lightGrey: #f4f5f7;
   --textGrey: #898989;
-  --textGrey2: #9F9F9F;
-  --lightBrownish : #FCF8F3;
-  --text61 : #616161;
-  --greyBG : rgb(229, 229, 232);
+  --textGrey2: #9f9f9f;
+  --lightBrownish: #fcf8f3;
+  --text61: #616161;
+  --greyBG: rgb(229, 229, 232);
 }
 
-.App{
+.App {
   max-width: 2000px;
   margin: 0 auto;
 }
@@ -65,7 +64,7 @@
 .furniro-title {
   font-size: 34px;
   font-weight: 700;
-  gap: 8px
+  gap: 8px;
 }
 
 .g-m-left {
@@ -76,7 +75,6 @@
   margin-right: 60px;
 }
 
-
 .nav-icons {
   font-size: 20px;
   display: flex;
@@ -84,21 +82,21 @@
   gap: 30px;
 }
 
-.toggle-btn{
+.toggle-btn {
   font-size: 20px;
 }
 
-.nav-hide{
+.nav-hide {
   flex-direction: column;
 }
 
-.nav-hide-2{
+.nav-hide-2 {
   flex-direction: row;
   justify-content: center;
   font-size: 30px;
 }
 
-.menu-bar{
+.menu-bar {
   display: flex;
   justify-content: center;
   background-color: burlywood;
@@ -110,7 +108,7 @@
 .hero {
   background-image: url(./img/hero-furniro.svg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   height: auto;
   background-position: center;
   display: flex;
@@ -141,7 +139,7 @@
   font-weight: 700;
 }
 
-.hero-text{
+.hero-text {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -167,10 +165,16 @@
 }
 
 .browse-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(1,1fr);
   gap: 20px;
   align-items: center;
   justify-content: center;
+}
+
+.browse-1{
+  margin: 0 auto;
 }
 
 .browse-caption {
@@ -183,19 +187,19 @@
   margin: 10px 0px;
 }
 
-.our-products{
+.our-products {
   margin-top: 30px;
 }
 
 .our-products-grid {
-  --gridCol : 6;
-  --gridRow : 1;
+  --gridCol: 6;
+  --gridRow: 1;
   display: grid;
   grid-template-columns: repeat(var(--gridCol), 1fr);
   grid-template-rows: repeat(var(--gridRow), 1fr);
   justify-items: center;
   align-items: center;
-  gap: 40px; 
+  gap: 40px;
 }
 
 .product {
@@ -204,9 +208,9 @@
   display: flex;
   flex-direction: column;
   position: relative;
-} 
+}
 
-.product:hover .product-hover {  
+.product:hover .product-hover {
   display: flex !important;
 }
 
@@ -217,7 +221,7 @@
 }
 
 .product-details {
-  background-color: var(--greyBG); 
+  background-color: var(--greyBG);
   padding: 10px;
   padding-bottom: 30px;
   text-align: start;
@@ -247,7 +251,7 @@
 }
 
 .product-discount {
-  color: #B0B0B0;
+  color: #b0b0b0;
   text-decoration: line-through;
   font-size: 16px;
 }
@@ -274,7 +278,7 @@
 
 .product-cart-btn {
   font-size: 14px;
-  font-weight:600 ;
+  font-weight: 600;
   background-color: var(--white);
   color: var(--fullDark);
   padding: 10px;
@@ -291,12 +295,12 @@
   display: flex;
   cursor: pointer;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   gap: 3px;
   font-size: 13px;
 }
 
-.show-more-btn{
+.show-more-btn {
   background-color: var(--white);
   border: 2px solid var(--fullDark);
   padding: 10px 50px;
@@ -304,32 +308,34 @@
   font-weight: 500;
 }
 
-.show-more-products{
+.show-more-products {
   margin-top: 30px;
   margin-bottom: 50px;
 }
 
 /* Explore section */
 
-.explore-more-btn{
+.explore-more-btn {
   background-color: var(--fullDark);
   color: var(--white);
-  padding: 10px 35px;
+  padding: 10px 23px;
   font-size: 13px;
   font-weight: 500;
   width: 150px;
+  display: flex;
+  justify-content: center;
 }
 
-.explore-more-section{
+.explore-more-section {
   display: flex;
   background-color: var(--lightBrownish);
-  /* padding: 40px 0px; */
+  padding: 40px 0px;
 }
 
-.explore{
+.explore {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   /* align-items: start; */
   justify-content: center;
   padding-left: 60px;
@@ -337,53 +343,51 @@
   text-align: left;
 }
 
-.text-explore{
+.text-explore {
   color: var(--text61);
   font-weight: 500;
 }
 
 /* share-your-setup-with */
 
-.share-your-setup-with{
+.share-your-setup-with {
   color: #616161;
   font-size: 16px;
   font-weight: 600;
 }
 
-.share-your-setup{
+.share-your-setup {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
 /* Footer */
 
-.footer{
+.footer {
   background-color: var(--greyBG);
 }
 
-.footer-sections{
+.footer-sections {
   display: flex;
   flex-direction: column;
   text-align: start;
   justify-content: space-between;
 }
 
-.footer-headers{
+.footer-headers {
   color: var(--textGrey2);
   margin-bottom: 50px;
 }
 
-.footer-title{
+.footer-title {
   color: black;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 40px;
 }
 
-
-.footers-content{
+.footers-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -392,31 +396,31 @@
   gap: 20px;
 }
 
-.footer-links{
+.footer-links {
   display: flex;
   flex-direction: column;
 }
 
-.footer-link{
+.footer-link {
   font-size: 16px;
-  font-weight: 500;    
+  font-weight: 500;
   margin: 10px 2px;
 }
 
-.newsletter-form{
+.newsletter-form {
   display: flex;
   gap: 20px;
 }
 
-.email-input{
+.email-input {
   width: 200px;
-  border-bottom: 2px solid black ;
+  border-bottom: 2px solid black;
   outline: none;
   background-color: var(--greyBG);
   padding: 2px;
 }
 
-.btn-subscribe{
+.btn-subscribe {
   border-bottom: 2px solid black;
   font-weight: 500;
   width: fit-content;
@@ -424,15 +428,15 @@
 
 /* Featre banner */
 
-.feature-banner{
+.feature-banner {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(1,1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   margin: 30px 0px;
   gap: 15px;
 }
 
-.feature-service{
+.feature-service {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -440,21 +444,21 @@
   gap: 15px;
 }
 
-.feature-banner-header{
+.feature-banner-header {
   font-size: 20px;
   font-weight: 600;
 }
 
-.feature-banner-p{
+.feature-banner-p {
   font-size: 15px;
   font-weight: 500;
   color: #898989;
 }
 
-.feature-content{
+.feature-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start ;
+  align-items: flex-start;
 }
 
 /* Cart */
@@ -480,7 +484,6 @@
   z-index: 1; /* Ensure the cart banner appears above other content */
 }
 
-
-.cart-banner{
+.cart-banner {
   font-size: 20px;
 }

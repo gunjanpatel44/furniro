@@ -3,6 +3,7 @@ import './App.css';
 import '../src/css/laptop.css';
 import '../src/css/tablet.css';
 import '../src/css/mobile.css';
+import '../src/css/mobile-l.css';
 import Home from './components/Home.js';
 import About from './components/About.js';
 import { Route, Routes } from 'react-router-dom';

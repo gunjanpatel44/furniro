@@ -35,7 +35,7 @@ export default function Footer(){
         </div>
       </div>
       <div className=' py-4 text-center font-semibold text-xs'>
-        © 1996-2024, Furnio, Inc. or its affiliates
+        © 1996-2024, Furniro, Inc. or its affiliates
       </div>
     </footer>
   )

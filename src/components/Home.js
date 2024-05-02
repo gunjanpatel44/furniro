@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import shareYourSetup from '../img/Share.svg'
 import Dining from '../img/image-dining.svg'
 import Living from '../img/Image-living room.svg'
-import BedroomExplore from '../img/Explore-More/bedroom-explore-more.svg'
 import Bedroom from '../img/image-bedroom.svg'
 import ProductsRender from '../components/ProductsRender.js'
 import { Link } from 'react-router-dom';
@@ -13,7 +12,7 @@ import FeaureBanner from './FeatureBanner.js';
 import Footer from './Footer.js';
 export default function Home() {
   const [showProductsNum, setShowProductsNum] = useState(6);
-  let addProducts = 6;
+
   useEffect(() => {
     // Function to get the value of the --gridCol CSS variable
     const getGridColValue = () => {
@@ -28,13 +27,11 @@ export default function Home() {
 
     // Set the initial value of showProductsNum
     const initialGridColValue = getGridColValue();
-    addProducts = initialGridColValue;
     setShowProductsNum(initialGridColValue);
 
     // Optional: Update showProductsNum whenever --gridCol changes
     const handleResize = () => {
       const updatedGridColValue = getGridColValue();
-      addProducts = updatedGridColValue;
       setShowProductsNum(updatedGridColValue);
     };
     window.addEventListener('resize', handleResize);

@@ -1,0 +1,35 @@
+@media only screen and (min-width:425px) and (max-width: 630px) {
+  .our-products-grid {
+    --gridCol: 3;
+    --gridRow: 1;
+    gap: 20px;
+  }
+  
+  .footers-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .feature-banner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .feature-service{
+    justify-content: start;
+  }
+
+  .product-name{
+    font-size: 20px;
+  }
+
+  .product-price{
+    font-size: 15px;
+  }
+  .g-m-left {
+    margin-left: 25px;
+  }
+
+  .g-m-right {
+    margin-right: 25px;
+  }
+}

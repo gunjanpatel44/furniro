@@ -13,7 +13,7 @@
   }
 
   .our-products-grid {
-    --gridCol: 3;
+    --gridCol: 2;
     --gridRow: 1;
   }
 
@@ -49,11 +49,39 @@
   }
 
   .feature-banner {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .feature-service {
     justify-content: start;
   }
+
+  .explore-more-btn {
+    padding: 5px 20px;
+}
+
+.explore{
+  align-items: center;
+}
+explore-more-section {
+  padding: 30px 0px;
+  margin: 0;
+}
+.email-input {
+  width: 150px;
+}
+
+.product-price{
+  font-size: 18px;
+}
+
+.product-name{
+  font-size: 18px;
+}
+.product-prices{
+  flex-direction: column;
+  align-items: start;
+  gap: 2px;
+}
+
 }

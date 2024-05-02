@@ -13,7 +13,7 @@ export default function Cart() {
       <div>
         <div className='preview-banner'>
         
-          <img src={Banner}/>
+          <img src={Banner} alt="banner"/>
         </div>
         <div className='cart-banner-div'>
           <img src={Logo} alt='Logo'></img>
@@ -28,4 +28,3 @@ export default function Cart() {
     </div>
   )
 }
-c
